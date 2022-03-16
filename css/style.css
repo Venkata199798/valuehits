@@ -53,6 +53,59 @@ html{
     text-decoration: none;
     
 }
+
+.container_1{
+    position: relative;
+}
+
+.image_color{
+    width: 100%;
+    max-height: 67.6rem;
+}
+.overlaycolor{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0,1));
+}
+.centering_para{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 1452px;
+
+}
+
+.centering_para p{
+    color: #FFFFFF;
+    font-family: "Poppins";
+    font-size: 5rem;
+
+}
+.centering_para h3{
+    font-family: "Poppins";
+    font-size: 6.4rem
+}
+.form_demo{
+    position: relative;
+}
+.form_demo{
+    
+    position: absolute;
+    left: 30%;
+    top: 100%;
+    bottom: -100px;
+    transform: translate(-22%,-70%);
+    max-height: 206px;
+    height: 100px;
+    max-width: 1716px;
+    width: 90%;
+    background-color: #F43535;
+}
 /* valueimages */
 .bg_val_color{
     color: #FFFFFF;
@@ -72,81 +125,84 @@ html{
     text-align: center;
 }
 
-/* numbercontainer */
-.num_bg_ground{
-    background-color: #E2E7EA;
-    padding-top: 7.1rem;
-}
-.num_heading{
-    font-family: "Poppins";
-    font-size: 6.1rem;
-    font-weight: 300;
-    color: #000000;
-    max-width: 65.8rem;
-    margin: auto;
-    padding-bottom: 6.1rem;
-}
-.card_count{
-    background-color: #6E7B88;
-    /* max-width: 369px; */
-    border: 1px solid #707070;
-    border-radius: 5px;
-    /* height: 403px; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; */
-    /* margin-right: 5px; */
 
-    
+
+.bg_card_color{
+    background-image: linear-gradient(to bottom,#E2E7EA,#E0E5E8);
+    padding-top: 7.1rem;
+
+}
+.card{
+    max-width: 369px;
+    /* max-height: 403px;  */
+    background-color:rgba(0, 0, 0, 0.04);
+    border-color: transparent;
+    box-shadow: #000000;
+    margin-right: 20px;
+    padding: 20px;
+}
+.cards_section{
+    width: 100%;
+}
+.visi_bg{
+    background-color:#242424 ;
+    color: #FFFFFF;
+}
+.misi_bg{
+    background-color: #000000;
+    color:#FFFFFF;
+}
+.heading{
+    font-family: "Poppins";
+    font-size: 6rem;
+    font-weight: 500;
+    margin-bottom: 6.1rem;
 }
 .number_text{
     font-family: "Poppins";
-    font-size: 8rem;
-    font-weight: 300;
-    color: #000000;
-    text-align: center;
-    padding-top: 5rem;
-}
-.years_text{
-    color: #000000;
-    font-family: "Poppins";
-    font-size: 2.2rem;
-    text-align: center;
-    max-width: 226px;
-    margin: auto;
-    padding-top: 2.2rem;
+    font-size: 6rem;
+    font-weight: 200;
 }
 .since_text{
-    color: #000000;
     font-family: "Poppins";
     font-size: 2.2rem;
-    text-align: center;
-    max-width: 319px;
-    margin: auto; 
-    padding-top: 3.5rem;
-    padding-bottom: 6.9rem; 
-    padding-right: 2.8rem;
+    font-weight: 400;
+    max-width: 31.9rem;
+}
+.visi_text{
+    font-family:"Poppins" ;
+    font-size: 4.5rem;
+    padding-top: 4.5rem;
+}
+.para{
+    font-family:"Poppins" ;
+    font-size: 2.2rem;
+    font-weight:300 ;
+    max-width: 67.3rem;
+    padding-bottom: 2.4rem;
+}
+.year_text{
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-weight: 700;
 }
 
-.years_text1{
-    color: #000000;
-    font-family: "Poppins";
-    font-size: 2.2rem;
-    text-align: center;
-    max-width: 28.2rem;
-    margin: auto;
-    padding-top: 2.2rem;
-}
-.years_text2{
-    color: #000000;
-    font-family: "Poppins";
-    font-size: 2.2rem;
-    text-align: center;
-    max-width: 16.2rem;
-    margin: auto;
-    padding-top: 2.2rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -156,15 +212,19 @@ html{
     text-align:center;
     color:#EA3A3A;
     font-family:"Poppins";
-    font-weight:400px;
+    font-size: 3rem;
+    font-weight:400;
     margin-top:5px;
+    padding-top: 8rem;
+    padding-bottom: 1.4rem;
 }
 .main-head{
     color:#000000;
     text-align:center;
-    font-size:25px;
+    font-size:5rem;
     font-family:"Poppins";
-    font-weight:200px;
+    font-weight:200;
+    padding-bottom: 4.9rem;
 }
 .reach{
     margin:5px 15px 0px 15px;
@@ -173,7 +233,7 @@ html{
 }
 .card-container{
     background-color:#FFFFFF;
-    margin-bottom:10px;
+    margin-bottom:1rem;
     box-shadow:0px 3px 8px -6px rgb(100,100,100);
     /*box-shadow:0 8px 6px -6px lightgray;
     height:100px;
@@ -182,14 +242,24 @@ html{
 .paragraph{
     padding:15px 0px  0px 5px;
     font-family:"Poppins";
-    font-weight:400px;
+    font-weight:300;
     max-width:250px;
+    font-size: 2.2rem;
+    padding-bottom: 3.3rem;
+    padding-left: 3rem;
 }
-.white{
+/* .white{
     padding-left:5px;
     margin-top:10px;
     color:black;
     font-size:20px;
+} */
+.arrow_color{
+    color: #000000;
+    width: 4.4rem;
+    padding-top: 3.3rem;
+    padding-bottom: 4.7rem;
+    padding-left: 3.1rem;
 }
 .reachout{
     background-color:#000000;
@@ -265,4 +335,36 @@ html{
         font-size: 1.5rem;
         line-height: 2rem;
     }
+    .heading{
+        font-size: 30px;
+    }
+    .card{
+        margin-right: 0px;
+    }
+    .para{
+        font-size: 1.5rem;
+    }
+    .visi_text{
+        font-size: 3rem;
+    }
+    .main-head{
+        font-size: 3rem;
+    }
+    .paragraph{
+        padding-bottom: 2rem;
+    }
+    .centering_para p{
+        font-size: 1rem;
+    }
+    .centering_para h3{
+        font-size: 1.8rem;
+    }
 }
+@media (min-width: 426px) and (max-width: 768px) {
+    .centering_para p{
+        font-size: 1.5rem;
+    }
+    .centering_para h3{
+        font-size: 2.8rem;
+    }
+}   
