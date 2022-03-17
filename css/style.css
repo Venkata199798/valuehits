@@ -9,6 +9,9 @@ html{
 .bg_color{
     background-color: #030303;
 }
+.bars_color{
+    background-color: #FFFFFF !important;
+}
 .bg_content{
     max-width: 1716px;
     width: 100%;
@@ -25,29 +28,46 @@ html{
     padding-top: 16px;
     padding-bottom: 19px;
     width: 270px;
+    display: flex;
 }
 .second_unordered{
     padding-top: 18px;
     padding-bottom: 15px;
-    width: 499px;
+    width: 49.9rem;
+    display: flex;
+    justify-content: space-evenly;
     /* margin: 0 auto; */
 }
 .phone_unordered{
     padding-top: 18px;
     padding-bottom: 15px;
-  width: 244px; 
+    width: 244px; 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .icon_color{
     color: #FFFFFF;
-    width: 1rem;
+    width: 2.5rem;
+    font-size: 2.1rem;
+    display: flex;
+    justify-content: center;
+}
+.value_img_text{
+    font-family: 'Poppins';
+    font-size: 2.2rem;
+    color: #000000;
+    font-weight: 500;
+    max-width: 46.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2.7rem;
+    padding-bottom: 3rem;
 }
 
 .nav_font_color{
-    color: #FFFFFF;
+    color: #FFFFFF!important;
     font-family: "Poppins";
     font-size: 1.8rem;
     text-decoration: none;
@@ -94,18 +114,26 @@ html{
     position: relative;
 }
 .form_demo{
-    
     position: absolute;
-    left: 30%;
-    top: 100%;
-    bottom: -100px;
-    transform: translate(-22%,-70%);
+    left: 50%;
+    bottom: -100%;
+    transform: translate(-50%,-50%);
     max-height: 206px;
     height: 100px;
     max-width: 1716px;
     width: 90%;
     background-color: #F43535;
 }
+.form_borders{
+    background-color: #F43535;
+    border: none;
+    width: 306px;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px;
+}
+
+
+
 /* valueimages */
 .bg_val_color{
     color: #FFFFFF;
@@ -227,9 +255,10 @@ html{
     padding-bottom: 4.9rem;
 }
 .reach{
-    margin:5px 15px 0px 15px;
+    margin:8.3rem 15px 0px 15px;
     height:100%;
     background-size: cover;
+    background-color:#000000;
 }
 .card-container{
     background-color:#FFFFFF;
@@ -262,8 +291,9 @@ html{
     padding-left: 3.1rem;
 }
 .reachout{
-    background-color:#000000;
-    height:360px;
+    /* background-color:#000000; */
+    /* height:360px; */
+    padding-bottom: 14.4rem;
 }
 .phone{
     width:500px;
@@ -280,13 +310,18 @@ html{
     color:#EA3A3A;
     text-align:center;
     font-family:"Poppins";
-    font-weight:400px;
+    font-size: 3rem;
+    font-weight:400;
+    margin-top: 8.6rem;
+
 }
 .reachout-head{
     text-align:center;
     color:white;
     font-family:"Poppins";
-    font-weight:200px;
+    font-size: 5rem;
+    font-weight:200;
+    padding-bottom: 12.5rem;
 }
 .input{
     border-bottom:white;
@@ -314,9 +349,10 @@ html{
     background-color:#F43535;
     border:none;
     color:white;
-    font-size:15px;
     font-family:"Poppins";
+    font-size: 3rem;
     font-weight:bold;
+    white-space: nowrap;
     padding:14px 20px 10px 14px;
 }
 .icon{
@@ -359,6 +395,7 @@ html{
     .centering_para h3{
         font-size: 1.8rem;
     }
+    .phone_unordered{}
 }
 @media (min-width: 426px) and (max-width: 768px) {
     .centering_para p{
