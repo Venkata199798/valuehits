@@ -113,27 +113,54 @@ html{
 .form_demo{
     position: relative;
 }
-.form_demo{
+.form-container{
     position: absolute;
     left: 50%;
-    bottom: -100%;
+    bottom: -230px;
     transform: translate(-50%,-50%);
-    max-height: 206px;
-    height: 100px;
+     max-height: 206px;
+    height: 140px;
     max-width: 1716px;
-    width: 90%;
+     width: 90%; 
+     padding:2.5rem;
     background-color: #F43535;
 }
 .form_borders{
     background-color: #F43535;
     border: none;
-    width: 306px;
+    max-width: 306px;
     border-bottom: 1px solid #ffffff;
     padding: 10px;
 }
-
-
-
+.form_borders:focus{
+    outline: none;
+}
+::-webkit-input-placeholder {
+    color: #ffffff;
+}
+.request-btn{
+  max-width:198px;
+    /* height:60px; */
+    background-color:#DD4444 ;
+    border:1px solid #707070;
+    color:#FFFFFF;
+    font-family:"Poppins";
+    font-size:1.5rem;
+    padding: 1.9rem 3.9rem 1.9rem 3.9rem;
+    /* white-space: nowrap; */
+    /* margin-top: 4.7rem; */
+    margin-bottom: 6rem;
+}
+.request-text {
+    color:#FFFFFF;
+    font-family:"Poppins";
+    font-size:1.8rem;
+}
+.risk-text{
+    color:#FFFFFF;
+    font-family:"Poppins";
+    font-size:2.2rem;
+}
 /* valueimages */
 .bg_val_color{
     color: #FFFFFF;
@@ -151,8 +178,15 @@ html{
     line-height: 4rem;
     max-width: 142rem;
     text-align: center;
+    padding-top: 9.4rem;
+    margin-top: 4.5rem;
 }
-
+.card{
+    background-color: #FFFFFF !important;
+}
+.bg_client_color{
+    background-image: linear-gradient(to right, rgb(116, 127, 141, 6));
+}
 
 
 .bg_card_color{
@@ -214,13 +248,98 @@ html{
     font-size: 2.2rem;
     font-weight: 700;
 }
+.padd_1{
+    padding-bottom: 12.4rem;
+}
 
 
 
 
 
+.clint_text{
+    font-family: "Poppins";
+    font-size: 6.1rem;
+    font-weight: 300;
+    text-align: center;
+    color: #000000;
+    padding-top: 9.9rem;
+}
+.with_para{
+    font-family: "Poppins";
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 5.4rem;
+}
 
+.lor_asid{
+    background-color: #000000;
+    max-width: 411px;
+    max-height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.global_txt{
+    font-family:"Poppins";
+    font-size: 6.1rem;
+    max-width: 281px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 7.2rem;
+}
+.ipusm_txt{
+    font-family:"Poppins";
+    font-size: 2.2rem;
+    max-width: 281px;
+    color: #FFFFFF;
+    padding-top: 7.9rem;
+    padding-bottom: 26.5rem;
+}
+.office_state{
+    font-family:"Poppins";
+    font-size: 3rem;
+    color: #000000;
+}
+.address_tex{
+    font-family:"Poppins";
+    font-size: 2.2rem;
+    color: #000000;
+    font-weight: 300;
+    max-width: 452px; 
+}
+.adde_icon{
+    color: #F43535;
+    height: 19px;
+    width: 19px;
+    background-color: transparent;
+}
+.phone_color{
+    font-family:"Poppins";
+    font-size: 2.2rem;
+    color: #000000;
+    font-weight: 300;
+    /* margin-right: 10px; */
+}
+.tower_back1{
+  position: relative;
+}
+.tower_back{
+    position: absolute;
+    left: 0%;
+    top: 100%;
+}
+
+/* .back_image{
+    background: url("./images/Mask Group 28.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+} */
 
 
 
@@ -255,10 +374,11 @@ html{
     padding-bottom: 4.9rem;
 }
 .reach{
-    margin:8.3rem 15px 0px 15px;
-    height:100%;
+    /* margin:8.3rem 15px 0px 15px; */
+    /* height:100%; */
     background-size: cover;
     background-color:#000000;
+    /* padding-bottom: 14.4rem; */
 }
 .card-container{
     background-color:#FFFFFF;
@@ -333,7 +453,11 @@ html{
     margin-right:20px;
     color:white;
     padding-bottom:10px;
-    width:250px;
+    max-width:465px;
+    width: 100%;
+}
+.input:focus{
+    outline: none;
 }
 .inputs{
     border-bottom:lightgray;
@@ -343,17 +467,28 @@ html{
     border-left:none;
     border-right:none;
     color:white;
-    width:70%;
+    max-width: 1190px;
+    width:100%;
+    margin-top: 5.4rem;
+    margin-bottom: 14rem;
+}
+.inputs:focus{
+    outline: none;
 }
 .submit-btn{
     background-color:#F43535;
     border:none;
     color:white;
     font-family:"Poppins";
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight:bold;
     white-space: nowrap;
     padding:14px 20px 10px 14px;
+    margin-top: 1.4rem;
+}
+.black_cont{
+    /* max-width: 1570px; */
+    max-height: 195px;
 }
 .icon{
     text-align:right;
@@ -361,6 +496,40 @@ html{
     font-size:20px;
     margin-left:40px;
 }
+.next_count{
+    background-color: #E2E7EA;
+}
+
+/* certifiactions */
+.certification_text{
+    font-family: "Poppins";
+    font-size: 6.1rem;
+    font-weight: 300;
+    color: #000000;
+}
+.valu_txt{
+    font-family: "Poppins";
+    font-size: 2.2rem;
+    font-weight: 200;
+    max-width: 692px;
+    color: #000000;
+}
+
+.ben_backgroud{
+    background-color: #F43535;
+}
+
+.ben_text{
+    font-family: "Poppins";
+    font-size: 4.1rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    /* max-width: 926px; */
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+}
+
 
 /* queries */
 @media (min-width:320px) and (max-width:425px){
@@ -395,7 +564,76 @@ html{
     .centering_para h3{
         font-size: 1.8rem;
     }
-    .phone_unordered{}
+    .image{
+        width: 100%;
+        max-width: 137px;
+        text-align: center;
+        margin: auto;
+    }
+    .toweimage{
+        max-width: 1920px;
+    }
+    
+    .request-btn{
+        max-width:198px;
+          /* height:60px; */
+          background-color:#DD4444 ;
+          border:1px solid #707070;
+          color:#FFFFFF;
+          font-family:"Poppins";
+          font-size:1rem;
+          padding: 1rem;
+          /* white-space: nowrap; */
+      }
+    .form-container{
+        position: absolute;
+        left: 50%;
+        bottom: -50px;
+        transform: translate(-50%,-50%);
+         max-height: 206px;
+        height: 140px;
+        max-width: 1716px;
+         width: 90%; 
+         padding:2.5rem;
+        background-color: #F43535;
+    }
+    .form_borders{
+        background-color: #F43535;
+        border: none;
+        max-width: 106px;
+        border-bottom: 1px solid #ffffff;
+        padding: 10px;
+        
+    }
+    .submit-btn{
+        background-color:#F43535;
+        border:none;
+        color:white;
+        font-family:"Poppins";
+        font-size: 1.5rem;
+        font-weight:bold;
+        white-space: nowrap;
+        padding:10px 10px 5px 8px;
+        margin-top: 1rem;
+    }
+    .inputs{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .reachout-head{
+        font-size: 1.5rem;
+        padding-bottom: 3rem;
+    }
+    .goog_img{
+        /* max-width: 458px; */
+        width: 100%;
+    }
+    .certification_text{
+        font-size: 3.5rem;
+    }
+    .ben_text{
+        font-size: 1.3rem;
+    }
 }
 @media (min-width: 426px) and (max-width: 768px) {
     .centering_para p{
@@ -404,4 +642,92 @@ html{
     .centering_para h3{
         font-size: 2.8rem;
     }
-}   
+    .form-container{
+        position: absolute;
+        left: 50%;
+        bottom: -100px;
+        transform: translate(-50%,-50%);
+         max-height: 206px;
+        height: 140px;
+        max-width: 1716px;
+         width: 90%; 
+         padding:2.5rem;
+        background-color: #F43535;
+    }
+    .certification_text{
+        font-size: 4rem;
+    }
+    .goog_img{
+        width: 100%;
+    }
+    .ben_text{
+        font-size: 1.8rem;
+    }
+}
+ 
+
+
+@media (width: 1024px){
+    .form-container{
+        position: absolute;
+        left: 50%;
+        bottom: -100px;
+        transform: translate(-50%,-50%);
+         max-height: 206px;
+        height: 140px;
+        max-width: 1716px;
+         width: 90%; 
+         padding:2.5rem;
+        background-color: #F43535;
+    } 
+    .certification_text{
+        font-size: 4rem;
+    }
+    .goog_img{
+        width: 100%;
+    }
+    
+}
+ @media (min-width: 1440px){
+    .form-container{
+        position: absolute;
+        left: 50%;
+        bottom: -1000px;
+        transform: translate(-50%,-50%);
+         max-height: 206px;
+        height: 140px;
+        max-width: 1716px;
+         width: 90%; 
+         padding:2.5rem;
+        background-color: #F43535;
+        
+    }
+} 
+
+@media (min-width: 2560px){
+    .form-container{
+        position: absolute;
+        left: 50%;
+        bottom: -450px;
+        transform: translate(-50%,-50%);
+         max-height: 206px;
+        height: 140px;
+        max-width: 1716px;
+         width: 90%; 
+         padding:2.5rem;
+        background-color: #F43535;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

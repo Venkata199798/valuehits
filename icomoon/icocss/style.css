@@ -27,6 +27,7 @@
 
 .icon-arrowright-converted:before {
   content: "\e904";
+  color: #FFFFFF !important;
 }
 .icon-rightarrow:before {
   content: "\e900";
