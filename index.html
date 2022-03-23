@@ -23,17 +23,35 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container">
-          <div class="unordered_padd">
+          <ul class="navbar-nav icon_unordered d-flex flex-row">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f icon_color"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-twitter icon_color"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-linkedin-in icon_color"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-instagram icon_color"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-pinterest-p icon_color"></i></a>
+            </li>
+          </ul>
+
+          <!-- <div class="unordered_padd">
             <a class="nav-link" href="#0"><i class="fa-brands fa-facebook-f icon_color"></i></a>
             <a class="nav-link" href="#0"><i class="fa-brands fa-twitter icon_color"></i></a>
             <a class="nav-link" href="#0"><i class="fa-brands fa-linkedin-in icon_color"></i></a>
             <a class="nav-link" href="#0"><i class="fa-brands fa-instagram icon_color"></i></a>
             <a class="nav-link" href="#0"><i class="fa-brands fa-pinterest-p icon_color"></i></a>
-          </div>
+          </div> -->
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class='fas fa-bars' style='color: white; border-color: white;'></i>
+            <i class="fa-solid fa-bars bars1"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto second_unordered">
@@ -93,15 +111,18 @@
             </div>
           </div>
           <div class="row">
-            <form action="" class="d-flex justify-content-between">
+            <form action="success.html" onsubmit="return subbmitted_form()" novalidate class="d-flex justify-content-between">
               <div class="col-2">
-                <input type="text" class="form_borders w-100" placeholder="Name">
+                <input type="text" class="form_borders w-100" placeholder="Name" id="name" onblur="Name_vaidate()">
+                <p id="nameerror"></p>
               </div>
               <div class="col-2">
-                <input type="email" class="form_borders w-100" placeholder="Email">
+                <input type="email" class="form_borders w-100" placeholder="Email" id="enam" onblur="Email_validate()">
+                <p id="emailerror"></p>
               </div>
               <div class="col-2">
-                <input type="text" class="form_borders w-100" placeholder="Phone.No.">
+                <input type="text" class="form_borders w-100" placeholder="Phone.No." id="mob" onblur="mobile_vli()">
+                <p id="naumerr"></p>
               </div>
               <div class="col-2">
                 <input type="text" class="form_borders w-100" placeholder="Message">
@@ -110,9 +131,9 @@
                 <button class="request-btn">Request Free quote</button>
               </div>
             </form>
-          </div>  
-      </div>
-</section> 
+          </div>
+        </div>
+      </section>
 
 
     </header>
@@ -120,7 +141,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <p class="digital_heading">Digital marketing is certainly the most powerful form of marketing ever known to
+            <p class="digital_heading pb-5">Digital marketing is certainly the most powerful form of marketing ever known to
               mankind
               Neuromes people wold wide, seamlessly use the digital technology as a part of their early life
               valu hits as a digital marketing company offers every under digital marketing. we harness the unlimited
@@ -136,7 +157,7 @@
       <div class="row">
         <div class=" d-flex justify-content-center cards_section flex-wrap pb-5">
           <div
-            class="col-lg-2 col-md-4 col-sm-6 col-xs-12 card card1 mr-3 mb-3 text-center d-flex flex-column justify-content-center align-items-center">
+            class="col-lg-2 col-md-4 col-sm-6 col-xs-12 card card1 mr-3 mb-3 p-3 text-center d-flex flex-column justify-content-center align-items-center">
             <span class="number_text">10</span>
             <h6 class="year_text">Years on the market</h6>
             <p class="since_text">Since Delante was founded in November 2014</p>
@@ -154,7 +175,7 @@
             <p class="since_text">This is how we grow,because we see that the clients want to work with us.</p>
           </div>
           <div
-            class="col-lg-2 col-md-4 col-sm-6 col-xs-12 card card1 mr-3 mb-3 p-4 text-center d-flex flex-column justify-content-center align-items-center">
+            class="col-lg-2 col-md-4 col-sm-6 col-xs-12 card card1 mr-3 mb-3 p-3 text-center d-flex flex-column justify-content-center align-items-center">
             <span class="number_text">21</span>
             <h6 class="year_text">Markets</h6>
             <p class="since_text">The number of countries when we can succesfully optimize websites</p>
@@ -183,7 +204,7 @@
       <p class="with_para">with our remarkable services & solutions, we help to flourish our bussiness</p>
       <div class="container card-container">
         <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-12 col-sm-6 col-md col-lg col-xl card ">
+          <div class="col-12 col-sm-6 col-md col-lg col-xl card">
             <img src="./images/Image 118.png" alt="star" class="w-100">
           </div>
           <div class="col-12 col-sm-6 col-md col-lg col-xl card">
@@ -220,162 +241,84 @@
     </section>
     <section class="container">
       <div class="row p-5 d-flex justify-content-between">
-        <div class="col-lg-6 col-12 col-md-6 ">
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
           <h3 class="certification_text">Certifications</h3>
           <p class="valu_txt">Valuehits has earned the google partner status by showcasing its expertise and
             proficiency in google tools and tactics.
           </p>
         </div>
-        <div class="col-lg-4 col-12 col-md-6 d-flex justify-content-end">
+        <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
           <img src="./images/Image 124.png" alt="google" class="goog_img">
         </div>
       </div>
     </section>
     <section class="ben_backgroud">
-      <h4 class="ben_text">Benfits of working with a Google partner Firm <i class="icon-rightarrow"></i></h4>
+      <h4 class="ben_text m-0">Benfits of working with a Google partner Firm <i class="fa-solid fa-chevron-right"></i></h4>
     </section>
-    <!-- <section class="container tower_back d-flex">
-      <aside class="lor_asid">
-        <h3 class="global_txt">Global Presence</h3>
-        <p class="ipusm_txt">Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
-      </aside>
-      </div>
-      <div class="d-flex flex-column justify-content-evenly">
-      <div class="row mb-3 d-flex justify-content-around">
-        <div class="col-5">
-          <h5 class="office_state">Mumbai (Head Office)</h5>
-          <address class="address_tex">
-            4th Floor, The Ruby,29,Senapathi Bapat
-            Marg, Dadar(West),Mumbai,
-            Maharashtra-400028.
-          </address>
-          <div>
-            <a href="#0" class="text-decoration-none phone_color pr-5"><i class="fa-solid fa-phone adde_icon pl-5"> </i>
-              91 22 40500600</a>
-          </div>
-          <div>
-            <a href="mailto:sales@valuhits.com" class="text-decoration-none phone_color pr-5"><i
-                class="fa-solid fa-envelope adde_icon pl-5"></i>sales@valuhits.com</a>
-          </div>
-        </div>
-        <div class="col-1">
-          <hr style="height: 100%; width: 1px;">
-        </div>
-        <div class="col-5">
-          <h5 class="office_state">Mumbai (Head Office)</h5>
-          <address class="address_tex">
-            4th Floor, The Ruby,29,Senapathi Bapat
-            Marg, Dadar(West),Mumbai,
-            Maharashtra-400028.
-          </address>
-          <div>
-            <a href="#0" class="text-decoration-none phone_color pr-5"><i class="fa-solid fa-phone adde_icon pl-5"> </i>
-              91 22 40500600</a>
-          </div>
-          <div>
-            <a href="mailto:sales@valuhits.com" class="text-decoration-none phone_color pr-5"><i
-                class="fa-solid fa-envelope adde_icon pl-5"></i>sales@valuhits.com</a>
-          </div>
-        </div>
-      </div>
-      <hr class="w-100">
-      
-      <div class="row d-flex justify-content-around">
-        <div class="col-5 pl-2">
-          <h5 class="office_state">Mumbai (Head Office)</h5>
-          <address class="address_tex">
-            4th Floor, The Ruby,29,Senapathi Bapat
-            Marg, Dadar(West),Mumbai,
-            Maharashtra-400028.
-          </address>
-          <div>
-            <a href="#0" class="text-decoration-none phone_color pr-5"><i class="fa-solid fa-phone adde_icon pl-5"> </i>
-              91 22 40500600</a>
-          </div>
-          <div>
-            <a href="mailto:sales@valuhits.com" class="text-decoration-none phone_color pr-5"><i
-                class="fa-solid fa-envelope adde_icon pl-5"></i>sales@valuhits.com</a>
-          </div>
-
-        </div>
-        <div class="col-1">
-          <hr style="height: 100%; width: 1px;">
-        </div>
-        <div class="col-5 ">
-          <h5 class="office_state">Mumbai (Head Office)</h5>
-          <address class="address_tex">
-            4th Floor, The Ruby,29,Senapathi Bapat
-            Marg, Dadar(West),Mumbai,
-            Maharashtra-400028.
-          </address>
-          <div>
-            <a href="#0" class="text-decoration-none phone_color pr-5"><i class="fa-solid fa-phone adde_icon pl-5"> </i>
-              91 22 40500600</a>
-          </div>
-          <div>
-            <a href="mailto:sales@valuhits.com" class="text-decoration-none phone_color pr-5"><i
-                class="fa-solid fa-envelope adde_icon pl-5"></i>sales@valuhits.com</a>
-          </div>
-
-        </div>
-      </div>
-      </div>
-  
-    </section> -->
-<section class="back_image d-flex pt-3 pd-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-3">
-        <div class="lor_asid">
-          <h3 class="global_txt">Global Presence</h3>
-          <p class="ipusm_txt">Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="card">
-          <h5 class="office_state">Mumbai (Head Office)</h5>
-          <address class="address_tex">
-            4th Floor, The Ruby,29,Senapathi Bapat
-            Marg, Dadar(West),Mumbai,
-            Maharashtra-400028.
-          </address>
-          <div>
-            <a href="#0" class="text-decoration-none phone_color pr-5"><i class="fa-solid fa-phone adde_icon pl-5"> </i>
-              91 22 40500600</a>
-          </div>
-          <div>
-            <a href="mailto:sales@valuhits.com" class="text-decoration-none phone_color pr-5"><i
-                class="fa-solid fa-envelope adde_icon pl-5"></i>sales@valuhits.com</a>
+    <section class="back_image d-flex justify-content-center align-items-center ">
+      <div class="container add_height pl-0 pr-0">
+        <div class="row gx-0 gy-0">
+          <aside class="col-12 col-md-3 bg-dark p-1">
+            <h3 class="global_txt">Global Presence</h3>
+            <p class="ipusm_txt">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry
+            </p>
+          </aside>
+          <div class="col-12 col-md-9">
+            <div class="d-flex gx-0 gy-0">
+              <div class="card bg-white w-100 p-4">
+                <h5 class="office_state">Mumbai (Head Office)</h5>
+                <address class="address_tex">
+                  4th Floor, The Ruby,29,Senapathi Bapat
+                  Marg, Dadar(West),Mumbai,
+                  Maharashtra-400028.
+                </address>
+                <ul class="list-unstyled">
+                  <li class="phone_color"><i class="fa-solid fa-phone adde_icon pl-5"></i>+91 22 40500600</li>
+                  <li class="phone_color"><i class="fa-solid fa-envelope adde_icon pl-5"></i> sales@valuehits.com</li>
+                </ul>
+              </div>
+              <div class="Card bg-white border w-100 p-4">
+                <h4 class="office_state">Mumbai</h4>
+                <address class="address_tex">
+                  124 Unique Industrial Estate, Off V S Marg,
+                  Prabhadevi, Mumbai, Maharashtra - 400025
+                </address>
+                <ul class="list-unstyled">
+                  <li class="phone_color"><i class="fa-solid fa-phone adde_icon pl-5"></i>+91 22 40500600</li>
+                  <li class="phone_color"><i class="fa-solid fa-envelope adde_icon pl-5"></i> sales@valuehits.com</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center gx-0 gy-0">
+              <div class="Card bg-white border w-100 p-4">
+                <h4 class="office_state">Navi Mumbai</h4>
+                <address class="address_tex">
+                  501, Sigma IT Park, 203 & 204, Rabale TTC Industrial Area, Behind Dhirubhai Life
+                  Science,Thane Belapur Road, Rabale, Maharashtra - 400 701
+                </address>
+                <ul class="list-unstyled">
+                  <li class="phone_color"><i class="fa-solid fa-phone adde_icon pl-5"></i>+91 22 40500600</li>
+                  <li class="phone_color"><i class="fa-solid fa-envelope adde_icon pl-5"></i> sales@valuehits.com</li>
+                </ul>
+              </div>
+              <div class="Card bg-white border w-100 p-4">
+                <h4 class="office_state">Pune</h4>
+                <address class="address_tex">
+                  Blue Ridge SEZ, Rajiv Gandhi Infotech Park-Phase-I, Hinjewadi, Pune, Maharashtra -
+                  411027
+                </address>
+                <ul class="list-unstyled">
+                  <li class="phone_color"><i class="fa-solid fa-phone adde_icon pl-5"></i>+91 22 40500600</li>
+                  <li class="phone_color"><i class="fa-solid fa-envelope adde_icon pl-5"></i> sales@valuehits.com</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-1 d-flex">
-        <hr>
-      </div>
-      <div class="col-4">
-        <div class="card">
-          <h5 class="office_state">Mumbai (Head Office)</h5>
-          <address class="address_tex">
-            4th Floor, The Ruby,29,Senapathi Bapat
-            Marg, Dadar(West),Mumbai,
-            Maharashtra-400028.
-          </address>
-          <div>
-            <a href="#0" class="text-decoration-none phone_color pr-5"><i class="fa-solid fa-phone adde_icon pl-5"> </i>
-              91 22 40500600</a>
-          </div>
-          <div>
-            <a href="mailto:sales@valuhits.com" class="text-decoration-none phone_color pr-5"><i
-                class="fa-solid fa-envelope adde_icon pl-5"></i>sales@valuhits.com</a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-    <section class="card-section">
+    </section>
+    <section class="card-section padd_blog">
       <h6 class="blog-head">Blogs/News</h6>
       <p class="main-head">Loreum ipsum content will be there</p>
       <section class="container">
@@ -403,151 +346,157 @@
         </div>
       </section>
     </section>
-  <footer class="foot_bg pt-5 pb-5 foot_bg1">
-    <div class="container p-4 pb-0">
+
+
+    <footer class="foot_bg padd12 pb-5  foot_bg1">
+      <div class="container  p-4 pb-0">
         <div class="row d-flex justify-content-between">
           <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
             <img src="./images/Image 124.png" alt="google" class="w-100 pb-2">
             <address class="footer_add pb-5">
               4th Floor, The Ruby,29,Senapathi Bapat
-            Marg, Dadar(West),Mumbai,
-            Maharashtra-400028. <br>
-            Tel: +91 Yourmobile number<br>
-            Email: sales@valuehits.com
+              Marg, Dadar(West),Mumbai,
+              Maharashtra-400028. <br>
+              Tel: +91 Yourmobile number<br>
+              Email: sales@valuehits.com
             </address>
             <div class="d-flex justify-content-evenly">
-            <a class="nav-link" href="#0"><i class="fa-brands fa-facebook-f icon1"></i></a>
-            <a class="nav-link" href="#0"><i class="fa-brands fa-twitter icon1"></i></a>
-            <a class="nav-link" href="#0"><i class="fa-brands fa-linkedin-in icon1"></i></a>
-            <a class="nav-link" href="#0"><i class="fa-brands fa-instagram icon1"></i></a>
-            <a class="nav-link" href="#0"><i class="fa-brands fa-pinterest-p icon1"></i></a>
+              <a class="nav-link" href="#0"><i class="fa-brands fa-facebook-f icon1"></i></a>
+              <a class="nav-link" href="#0"><i class="fa-brands fa-twitter icon1"></i></a>
+              <a class="nav-link" href="#0"><i class="fa-brands fa-linkedin-in icon1"></i></a>
+              <a class="nav-link" href="#0"><i class="fa-brands fa-instagram icon1"></i></a>
+              <a class="nav-link" href="#0"><i class="fa-brands fa-pinterest-p icon1"></i></a>
             </div>
-            </div>
-            <!-- <a href="#0" class="text-decoration-none">Tel: +91 Yourmobile number</a><br>
+          </div>
+          <!-- <a href="#0" class="text-decoration-none">Tel: +91 Yourmobile number</a><br>
             <a href="MailTo:sales@valuehits.com" class="text-decoration-none"> sales@valuehits.com</a> -->
           <div class="col-lg-2 col-md-4 mb-4 mb-md-0 borders_footer d-flex justify-content-center">
             <div>
-            <h5 class="compa_txt">Company</h5>
+              <h5 class="compa_txt">Company</h5>
 
-            <ul class="list-unstyled mb-0 ul_text d-flex flex-column justify-content-evenly">
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">About</a>
-              </li>
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">Case Study</a>
-              </li>
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">careers</a>
-              </li>
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">Contact Us</a>
-              </li>
-            </ul>
+              <ul class="list-unstyled mb-0 ul_text d-flex flex-column justify-content-evenly">
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">About</a>
+                </li>
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">Case Study</a>
+                </li>
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">careers</a>
+                </li>
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">Contact Us</a>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="col-lg-2 col-md-4 mb-4 mb-md-0 borders_footer borders_foot1 d-flex  justify-content-center">
             <div>
-            <h5 class="compa_txt">Hire SEO Expert</h5>
+              <h5 class="compa_txt">Hire SEO Expert</h5>
 
-            <ul class="list-unstyled mb-0 ul_text d-flex flex-column justify-content-evenly" style="height: 133px;">
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">E Commerce SEO</a>
-              </li>
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">International SEO</a>
-              </li>
-              <li>
-                <a href="#!" class="text-decoration-none col_ul">Domestic SEO</a>
-              </li>
-            </ul>
+              <ul class="list-unstyled mb-0 ul_text d-flex flex-column justify-content-evenly seo">
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">E Commerce SEO</a>
+                </li>
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">International SEO</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-decoration-none col_ul">Domestic SEO</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
           <div class="col-lg-2 col-md-4 mb-4 mb-md-0 borders_footer d-flex justify-content-center">
             <div>
-            <h5 class="compa_txt">Hire SEM Expert</h5>
+              <h5 class="compa_txt">Hire SEM Expert</h5>
 
-            <ul class="list-unstyled mb-0 ul_text d-flex flex-column justify-content-evenly">
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">Google/Bing ads</a>
-              </li>
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">E Commerce Shoping ads</a>
-              </li>
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">Mobile App Marketing</a>
-              </li>
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">Youtube Ads</a>
-              </li>
-            </ul>
+              <ul class="list-unstyled mb-0 ul_text d-flex flex-column justify-content-evenly">
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">Google/Bing ads</a>
+                </li>
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">E Commerce Shoping ads</a>
+                </li>
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">Mobile App Marketing</a>
+                </li>
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">Youtube Ads</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
           <div class="col-lg-2 col-md-3 mb-4 mb-md-0 borders_footer d-flex justify-content-center">
             <div>
-            <h5 class="compa_txt">Hire SMO Expert</h5>
+              <h5 class="compa_txt">Hire SMO Expert</h5>
 
-            <ul class="list-unstyled mb-0 ul_text d-flex flex-column justify-content-evenly" style="height: 79px;">
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">Paid Ads</a>
-              </li>
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">Organic Posting</a>
-              </li>
-            </ul>
-          </div>
+              <ul class="list-unstyled mb-0 ul_text d-flex flex-column justify-content-evenly smo">
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">Paid Ads</a>
+                </li>
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">Organic Posting</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="col-lg-2 col-md-4 mb-4 mb-md-0 d-flex justify-content-center">
             <div>
-            <h5 class="compa_txt">Other Services</h5> 
+              <h5 class="compa_txt">Other Services</h5>
 
-            <ul class="list-unstyled  ul_text d-flex flex-column justify-content-evenly" style="height:187px">
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">Content Writing</a>
-              </li>
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">Email Marketing</a>
-              </li>
-              <li>
-                <a href="#0" class="text-decoration-none col_ul">While label Marketing</a>
-              </li>
-            </ul>
+              <ul class="list-unstyled  ul_text d-flex flex-column justify-content-evenly other">
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">Content Writing</a>
+                </li>
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">Email Marketing</a>
+                </li>
+                <li>
+                  <a href="#0" class="text-decoration-none col_ul">While label Marketing</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-  </footer> 
-  <div class="text-center copy_r">
-    <small class="copy_txt">Copyright © 2020 ValueHits - A Digital Marketing Agency in Mumbai, India.</small>
-  </div>
+        <section class="container reach">
+          <h5 class="reachout-para pt-3">Reach out</h5>
+          <h4 class="reachout-head">How may I assist you today?</h4>
+          <div class="container p-5  d-flex flex-column justify-content-between">
+            <div class="row d-flex justify-content-center">
+              <div class="col-4">
+                <input type="text" placeholder="Name" class="input">
+                <!-- <input type="email" placeholder="Email" class="input">
+                    <input type="text" placeholder="Phone.no" class="input"> -->
+              </div>
+              <div class="col-4">
+                <input type="email" placeholder="Email" class="input">
+              </div>
+              <div class="col-4">
+                <input type="text" placeholder="Phone.no" class="input">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8">
+                <input type="text" placeholder="Messages" class="inputs">
+              </div>
+              <div class="col-4">
+                <button class="submit-btn">Submit <i class="fa-solid fa-arrow-right-long ms-auto iconss"></i></button>
+              </div>
+            </div>
+          </div>
+        </section>
+    </footer>
+    <div class="text-center copy_r">
+      <small class="copy_txt">Copyright © 2020 ValueHits - A Digital Marketing Agency in Mumbai, India.</small>
+    </div>
 
-    <section class="container reach">
-      <h5 class="reachout-para pt-5">Reach out</h5>
-      <h4 class="reachout-head">How may I assist you today?</h4>
-      <div class="container p-5 d-flex flex-column justify-content-between">
-        <div class="row d-flex justify-content-center">
-          <div class="col-4">
-            <input type="text" placeholder="Name" class="input">
-            <!-- <input type="email" placeholder="Email" class="input">
-                <input type="text" placeholder="Phone.no" class="input"> -->
-          </div>
-          <div class="col-4">
-            <input type="email" placeholder="Email" class="input">
-          </div>
-          <div class="col-4">
-            <input type="text" placeholder="Phone.no" class="input">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-8">
-            <input type="text" placeholder="Messages" class="inputs">
-          </div>
-          <div class="col-4">
-            <button class="submit-btn">Submit <i class="fa-solid fa-arrow-right-long ms-auto iconss" ></i></button>
-          </div>
-        </div>
-      </div>
-    </section>
+
+
   </main>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="javascript/style.js"></script>
 </body>
 
 </html>
